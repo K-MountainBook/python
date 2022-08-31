@@ -1,16 +1,16 @@
 # 人数と点数を読み込んで合計点・平均点を表示
 
 print('合計点と平均点を求めます。')
-print('endと入力で入力終了')
+print('注："End"で入力終了。')
 
 number = 0
-tensu = []
+tensu = []                  # 空リスト
 
 while True:
     s = input('{}番の点数：'.format(number + 1))
-    if s == 'end':
+    if s == 'End':
         break
-    tensu.append(int(s))
+    tensu.append(int(s))    # 末尾に追加
     number += 1
 
 total = sum(tensu)
